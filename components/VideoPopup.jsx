@@ -9,10 +9,10 @@ import ReactPlayer from "react-player";
 
 const useStyles = makeStyles((theme) => ({
   dialog: {
-    maxHeight: "800px",
+    maxHeight: "1200px",
     height: "fit-content",
     width: "1200px",
-    top: "25vh",
+    top: "5vh",
   },
   container: {
     alignItems: "unset",
@@ -31,14 +31,8 @@ function VideoPopup(props) {
       onClose={props.handleClose}
     >
       <DialogContent>
-        <ReactPlayer height="360px" width="100%" url="https://www.youtube.com/watch?v=hl6ibkLDvLk" />
+        <ReactPlayer height="460px" width="100%" url="https://www.youtube.com/watch?v=hl6ibkLDvLk" />
       </DialogContent>
-
-      <DialogActions>
-        <Button onClick={() => props.handleClose()}>
-          Cerrar
-        </Button>
-      </DialogActions>
     </Dialog>
   );
 }

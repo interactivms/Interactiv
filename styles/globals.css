@@ -346,6 +346,7 @@ svg {
   padding: 0;
   z-index: 0;
 }
+
 .title {
   font-weight: 1000;
   font-size: 5rem;
@@ -525,14 +526,36 @@ svg {
 .contactButton:hover {
   transform: scale(1.05);
 }
+.mobile-only {
+  display: none;
+}
 
+.sc-dnqmqq {
+  padding: 1.5rem;
+}
+
+.MuiDialog-paperWidthSm {
+  max-width: 1000px !important;
+}
+.MuiDialogContent-root {
+  background-color: #0e0f11 !important;
+}
 @media (max-width: 870px) {
   .bannerTitle {
     width: clamp(200px, 35vw, 500px);
     font-size: 2rem;
   }
+  .title {
+    font-weight: 1000;
+    font-size: 3rem;
+  }
 }
 @media (max-width: 450px){
+
+  .subtitle {
+    font-weight: 1000;
+    font-size: 2.1rem;
+  }
 
   .viewh-150 {
     min-height: 80vh !important;
@@ -541,7 +564,9 @@ svg {
   .businessText {
     font-size: 1rem;
   }
-
+  .mobile-only {
+    display: block !important;
+  }
   .no-mobile {
     display: none !important;
   }
@@ -550,8 +575,9 @@ svg {
     font-size: 2rem;
   }
   .bannerTitle {
-    width: clamp(150px, 35vw, 500px);
-    font-size: 1.5rem;
+    width: clamp(150px, 75vw, 500px);
+    font-size: 2.5rem;
+    font-weight: 1000;
   }
   .asSubTitle {
     font-size: 1.5rem;
@@ -562,18 +588,43 @@ svg {
   .workGrid {
     display: grid;
     grid-gap: 0.5rem;
-    grid-template-areas: "r1 r1 r1 r2 r2"
-    "r1 r1 r1 r2 r2"
-    "r3 r3 r4 r4 r4"
-    "r3 r3 r4 r4 r4"
+    grid-template-areas: "r1 r1 r1 r1 r1"
+    "r2 r2 r1 r2 r2"
+    "r3 r3 r3 r3 r3"
+    "r4 r4 r4 r4 r4"
   }
-  .r2 {
-    display: none;
+
+  .title {
+    font-weight: 1000;
+    font-size: 2.5rem;
   }
-  .r3 {
-    display: none;
+
+  .aboutUsBG {
+    position: absolute;
+    height: auto;
+    width: auto;
+    padding: 0;
+    z-index: 0;
+    bottom: 0;
   }
-  .r4 {
-    display: none;
+
+  .aboutUs {
+    box-shadow: 8px -7px 11px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 8px -7px 11px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 8px -7px 11px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas:  "t1 t1 "
+                          "t2 t2"
+                          "p p"
+                          "p p"
+                          "p p"
+                          "p p"
+                          ". b"
+                          "c c"
+                          "c c";
   }
 }

@@ -10,28 +10,7 @@ function PickerItem({options, setPricing, info, setInfo}) {
   return (
     <>
       <div className="row mx-0">
-      <div className="col d-flex flex-column justify-content-center align-items-center">
-        {info && (
-          <>
-            <h2 className="white subtitle">{info.title}</h2>
-            <br />
-            <h4 className="white subtitleText">
-              {info.text}
-            </h4>
-            <br />
-            {info.pricing ? 
-            <>
-              <button className="white bg-teal br-25 px-3 py-2 subtitleText" onClick={() => setPricing(info)}>Ver costos</button>
-            </>
-            :
-            <>
-              <p className="white">Contáctanos para una cotización personalizada.</p>
-            </>}
-            <br />
-          </>
-        )}
-      </div>
-      <div className="col ">
+      <div className="col-12">
         <div className="row mx-0">
           {options.map((option, key) => (
             <div

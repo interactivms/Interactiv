@@ -7,7 +7,7 @@ function AboutUs() {
   return (
     <div className="row mx-0 viewh-60  bg-gradient-linear-dark-alt relative">
       <AboutUsBG />
-      <div className="col-12 d-flex justify-content-center align-items-center p-5">
+      <div className="col-12 d-flex justify-content-center align-items-center p-2">
         <div className="container relative h-100 aboutUs bg-gradient-linear-dark">
           <AboutUsComponentBg />
           <div className="t1">

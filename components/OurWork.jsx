@@ -23,15 +23,16 @@ function OurWork() {
               position="r1"
             />
             <ImgContainer
-              source="https://source.unsplash.com/random/600x600?sig=2"
-              select={setSelected}
-              position="r4"
-            />
-            <ImgContainer
               source="https://source.unsplash.com/random/500x300?sig=4"
               isImage={true}
               position="r2"
             />
+            <ImgContainer
+              source="https://source.unsplash.com/random/600x600?sig=2"
+              select={setSelected}
+              position="r4"
+            />
+
             <ImgContainer
               source="https://source.unsplash.com/random/500x300?sig=5"
               isImage={true}
@@ -81,10 +82,8 @@ function OurWork() {
           </div>
         </div>
       </div>
-      <div className="row">
-      
-      </div>
-      <div className="row mx-0 viewh-40">
+      <br />
+      <div className="row mx-0 viewh-40 py-3">
         <div className="col d-flex flex-column justify-content-center align-items-center">
           <Logo />
           <br />
@@ -94,7 +93,7 @@ function OurWork() {
           <p className="white">Hacemos una cotización a tu medida.</p>
           <textarea className="contact-textArea p-2 white" name="" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
           <br />
-          <input className="contact-input p-2 white" type="text"  placeholder="Correo..." />
+          <input className="contact-input p-2 white" type="text" placeholder="Correo..." />
           <br />
           <button className="white bg-teal contactButton px-3 py-2">Contactar</button>
         </div>
