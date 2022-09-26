@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from "react";
-import PageLayout from '../layouts/pageLayout'
-import { getBlogPosts } from "../controllers/blogpostController";
-
+import PageLayout from '../components/layouts/pageLayout'
 export default function Blog() {
 
   const getPosts = async() => {

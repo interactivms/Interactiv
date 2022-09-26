@@ -1,5 +1,5 @@
 import React from 'react'
-import PageLayout from '../layouts/pageLayout'
+import PageLayout from '../components/layouts/pageLayout'
 
 export default function aboutUs() {
   return (
