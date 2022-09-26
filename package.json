@@ -17,9 +17,5 @@
     "react-dom": "18.1.0",
     "react-grid-carousel": "^1.0.1",
     "react-player": "^2.10.1"
-  },
-  "devDependencies": {
-    "eslint": "8.17.0",
-    "eslint-config-next": "12.1.6"
   }
 }
