@@ -1,5 +1,5 @@
 import React from 'react'
-import PageLayout from '../components/layouts/pageLayout'
+import PageLayout from '../components/layouts/PageLayout'
 
 export default function services() {
   return (
