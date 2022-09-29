@@ -5,6 +5,7 @@ import PageLayout from '../components/layouts/pageLayout'
 import Services from "../components/Services";
 import BannerParallax from "../components/BannerParallax";
 import OurWork from "../components/OurWork";
+
 export default function Home() {
   return (
     <div>
